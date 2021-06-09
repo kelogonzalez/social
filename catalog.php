@@ -17,7 +17,7 @@
                window.location="catalog.php?CategoryCode="+$(this).attr("data-code-category");
            });
         });
-    </script>
+    </script> 
 </head>
 <body>
     <?php
