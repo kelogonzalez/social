@@ -8,7 +8,7 @@
             <i class="visible-xs zmdi zmdi-close pull-left mobile-menu-button" style="line-height: 55px; cursor: pointer; padding: 0 10px; margin-left: 7px;"></i>
             sistema de Gestión Social
         </div>
-        <div class="full-reset" style="background-color:#D38409; padding: 10px 0; color:#fff;">
+        <div class="full-reset" style="background-color:#85B0AB; padding: 10px 0; color:#fff;">
             <figure>
                 <img src="<?php echo $LinksRoute; ?>assets/img/social.png" alt="Biblioteca" class="img-responsive center-box" style="width:100%;">
             </figure>
