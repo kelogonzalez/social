@@ -175,14 +175,22 @@
 -->
 
 <li>
-    <a href="<?php echo $LinkRoute; ?>/social/flujo/index.html">
+    <a href="<?php echo $LinkRoute; ?>/social/logistica/index.php">
         <i class="zmdi zmdi-airplane zmdi-hc-fw"></i>&nbsp;&nbsp; Logística
     </a>
 </li>
 
 <li>
-    <a href="<?php echo $LinkRoute; ?>/social/vivienda/index.html">
+
+    <a href="<?php echo $LinkRoute; ?>/social/vivienda/index.php">
         <i class="zmdi zmdi-home zmdi-hc-fw"></i>&nbsp;&nbsp; Plan Vivienda
+    </a>
+</li>
+
+
+<li>
+    <a href="<?php echo $LinkRoute; ?>/social/ayuda/index.php">
+        <i class="zmdi zmdi-layers zmdi-hc-fw"></i>&nbsp;&nbsp; Ayuda Social
     </a>
 </li>
 

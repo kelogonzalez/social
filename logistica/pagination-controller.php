@@ -5,39 +5,39 @@
 */
 require_once "pagination-model.php";
 
-class Pagination 
+class Pagination
 {
 	private static $page;
 	private static $range;
-	private static $section_size;	
+	private static $section_size;
 	private static $pagination_model;
 
 	public static function config($page, $range, $table, $custom_select = null, $section_size = 5)
 	{
 		self::$page = (string)($page);
 		self::$range = $range;
-		self::$section_size = $section_size;						
+		self::$section_size = $section_size;
 
 		if ($custom_select == null && $table != null)
 		{
-			self::$pagination_model = new PaginationModel($table);			
+			self::$pagination_model = new PaginationModel($table);
 		}
 		else
 		{
-			self::$pagination_model = new PaginationModel($custom_select, true);			
+			self::$pagination_model = new PaginationModel($custom_select, true);
 		}
 	}
-	
+
 	public static function show_rows($order_by, $sort = "ASC")
 	{
 		$page = self::$page;
-		$range = self::$range;		
-		$pagination_model = self::$pagination_model;		
+		$range = self::$range;
+		$pagination_model = self::$pagination_model;
 		$start = ($page - 1) * $range;
 		$rows = $pagination_model->get_rows($start, $range, $order_by, $sort);
 		$names = $pagination_model->get_columns_names();
-		$result = array(array());											
-		
+		$result = array(array());
+
 		if ($rows != null)
 		{
 			for ($i = 0; $i < count($rows); $i++)
@@ -45,11 +45,11 @@ class Pagination
 				for ($j = 0; $j < count($names); $j++)
 				{
 					$result[$i][$names[$j]] = $rows[$i][$j];
-				}				
+				}
 			}
 		}
 		else
-		{			
+		{
 			for ($j = 0; $j < count($names); $j++)
 			{
 				$result[0][$names[$j]] = "Error: vacío";
@@ -62,7 +62,7 @@ class Pagination
 	{
 		$page = self::$page;
 		$range = self::$range;
-		$section_size = self::$section_size;	
+		$section_size = self::$section_size;
 		$pagination_model = self::$pagination_model;
 		$actual_section = 1;
 		$total_rows = $pagination_model->length();
@@ -87,7 +87,7 @@ class Pagination
 		if ($page > $total_pages || $page <= 0 || !ctype_digit($page))
 		{
 			$error = ($total_rows == 0) ? false : true;
-			
+
 		}
 
 		$pagination_data = array();
