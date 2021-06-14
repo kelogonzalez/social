@@ -1,6 +1,4 @@
 
-
-
 <?php
 	require 'conexion.php';
 
@@ -30,20 +28,23 @@
 
 		<div class="container">
 			<div class="row">
-				<h2 style="text-align:center">Plan Vivienda</h2>
+				<style>
+    h2 { color: #FF0000; }
+  </style>
+				<h2 style="text-align:center">Plan Vivienda 🏠</h2>
 			</div>
 
 			<div class="row">
-				<a href="nuevo.php" class="btn btn-primary">Nuevo Registro</a>
-				<a href="/social/home.php" class="btn btn-warning">Regresar</a>
+				<a href="nuevo.php" class="btn btn-primary">Nuevo Registro 📃</a>
+				<a href="/social/home.php" class="btn btn-warning">Regresar 👈🏼</a>
 
 				<form action="<?php $_SERVER['PHP_SELF']; ?>" method="POST">
 					<b>Nombre: </b><input type="text" id="campo" name="campo" />
-					<input type="submit" id="enviar" name="enviar" value="Buscar" class="btn btn-info" />
+					<input type="submit" id="enviar" name="enviar" value="Buscar 🔍" class="btn btn-info" />
 				</form>
 			</div>
 
-<a href="excel.php" class="btn btn-success btn-lg btn-block" >Descargar Excel</a>
+<a href="excel.php" class="btn btn-success btn-lg btn-block" >Descargar Excel 📊</a>
 			<br>
 
 			<div class="row table-responsive">

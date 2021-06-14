@@ -585,3 +585,13 @@ fieldset[disabled] .btn-danger.active {
           box-shadow: inset 0 1px 3px rgba(0, 0, 0, .05), 0 1px 0 rgba(255, 255, 255, .1);
 }
 /*# sourceMappingURL=bootstrap-theme.css.map */
+
+body {
+  background-image: url("http://lavillita.com.mx/wp-content/uploads/2014/08/background.jpg"), url("http://lavillita.com.mx/wp-content/uploads/2014/08/background.jpg");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
