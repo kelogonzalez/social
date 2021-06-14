@@ -13,11 +13,12 @@
 			$where = "WHERE nombre LIKE '%$valor'";
 		}
 	}
-	$sql = "SELECT * FROM clientes $where";
+	$sql = "SELECT * FROM ayuda $where";
 	$resultado = $mysqli->query($sql);
 
 ?>
 <html lang="es">
+<title>Ayudas Sociales 🧡</title>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -33,7 +34,7 @@
 				<style>
     h2 { color: #FF0000; }
   </style>
-				<h2 style="text-align:center">Registro Logística 💻</h2>
+				<h2 style="text-align:center">Ayudas Sociales 🧡</h2>
 
 			</div>
 
@@ -55,13 +56,15 @@
 					<thead>
 						<tr>
 							<th>ID</th>
-							<th>Nombre</th>
-							<th>Dirección</th>
-							<th>Telefono</th>
-							<th>Articulo</th>
-							<th>Cantidad</th>
-							<th>Fecha de Salida</th>
-							<th>Fecha de Recepción</th>
+							<th>Fecha</th>
+							<th>Solicitud</th>
+							<th>Sector</th>
+							<th>Nombre del solicitante</th>
+							<th>Cédula</th>
+							<th>Departamento Encargado</th>
+							<th>Estado</th>
+							<th>Fecha de Entrega</th>
+							<th>Teléfono</th>
 							<th>Observaciones</th>
 						</tr>
 					</thead>
@@ -71,13 +74,15 @@
 
 							<tr>
 								<td><?php echo $row['id']; ?></td>
+								<td><?php echo $row['fecha']; ?></td>
+								<td><?php echo $row['solicitud']; ?></td>
+								<td><?php echo $row['sector']; ?></td>
 								<td><?php echo $row['nombre']; ?></td>
-								<td><?php echo $row['direccion']; ?></td>
-								<td><?php echo $row['telefono']; ?></td>
-								<td><?php echo $row['articulo']; ?></td>
-								<td><?php echo $row['cantidad']; ?></td>
-								<td><?php echo $row['fechasalida']; ?></td>
+								<td><?php echo $row['cedula']; ?></td>
+								<td><?php echo $row['departamento']; ?></td>
+								<td><?php echo $row['estado']; ?></td>
 								<td><?php echo $row['fechaentrega']; ?></td>
+								<td><?php echo $row['telefono']; ?></td>
 								<td><?php echo $row['observaciones']; ?></td>
 								<td><a href="modificar.php?id=<?php echo $row['id']; ?>"><span class="glyphicon glyphicon-pencil"></span></a></td>
 								<td><a href="#" data-href="eliminar.php?id=<?php echo $row['id']; ?>" data-toggle="modal" data-target="#confirm-delete"><span class="glyphicon glyphicon-trash"></span></a></td>
