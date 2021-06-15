@@ -190,7 +190,13 @@
 
 <li>
     <a href="<?php echo $LinkRoute; ?>/social/ayuda/index.php">
-        <i class="zmdi zmdi-label-heart zmdi-hc-fw"></i>&nbsp;&nbsp; Ayuda Social
+        <i class="zmdi zmdi-favorite zmdi-hc-fw"></i>&nbsp;&nbsp; Ayuda Social
+    </a>
+</li>
+
+<li>
+    <a href="<?php echo $LinkRoute; ?>/social/tecnica/index.php">
+        <i class="zmdi zmdi-walk zmdi-hc-fw"></i>&nbsp;&nbsp; Ayudas Técnicas
     </a>
 </li>
 
