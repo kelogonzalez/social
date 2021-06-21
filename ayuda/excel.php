@@ -3,8 +3,6 @@ header("Content-Type: application/xls");
 header("Content-Disposition: attachment; filename=archivo.xls");
 $conexion=mysqli_connect('localhost','root','','logistica');
  ?>
-<html lang="es">
-<head>
  <table class="table" border = "1">
    <tr>
      <th scope="col">Fecha</td>
@@ -18,8 +16,8 @@ $conexion=mysqli_connect('localhost','root','','logistica');
        <th scope="col">Telefono</td>
      <th scope="col">Observaciones</td>
    </tr>
-</head>
-<body>
+
+
    <?php
    $sql="SELECT * from ayuda";
    $result=mysqli_query($conexion,$sql);
@@ -42,6 +40,4 @@ $conexion=mysqli_connect('localhost','root','','logistica');
  <?php
  }
   ?>
- </table>
-</body>
-</html>
+</table>

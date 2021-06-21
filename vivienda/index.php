@@ -55,7 +55,7 @@
 							<th>Nombre</th>
 							<th>Cédula</th>
 							<th>Dirección</th>
-							<th>Teléfono</th>
+							<th>Teléfono </th>
 							<th>Observaciones</th>
 						</tr>
 					</thead>

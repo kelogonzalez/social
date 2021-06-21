@@ -54,7 +54,7 @@
 				<table class="table table-striped">
 					<thead>
 						<tr>
-							<th>ID</th>
+							<th>ID </th>
 							<th>Nombre</th>
 							<th>Dirección</th>
 							<th>Telefono</th>
