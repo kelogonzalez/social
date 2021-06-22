@@ -3,18 +3,20 @@
 	require 'conexion.php';
 
 	$id = $_POST['id'];
-	$fecha = $_POST['fecha'];
-	$solicitud = $_POST['solicitud'];
-	$sector = $_POST['sector'];
-	$nombre = $_POST['nombre'];
+	$solicitante = $_POST['solicitante'];
 	$cedula = $_POST['cedula'];
-	$departamento = $_POST['departamento'];
+	$edad = $_POST['edad'];
+	$telefono = $_POST['telefono'];
+	$coordinador = $_POST['coordinador'];
+	$sector = $_POST['sector'];
+	$tipoayuda = $_POST['tipoayuda'];
+	$cantentregadas = $_POST['cantentregadas'];
+	$fecha = $_POST['fecha'];
 	$estado = $_POST['estado'];
 	$fechaentrega = $_POST['fechaentrega'];
-	$telefono = $_POST['telefono'];
 	$observaciones = $_POST['observaciones'];
 
-	$sql = "UPDATE ayuda SET fecha='$fecha', solicitud='$solicitud', sector='$sector', nombre='$nombre', cedula='$cedula', departamento='$departamento', estado='$estado', fechaentrega='$fechaentrega', telefono='$telefono',observaciones='$observaciones' WHERE id = '$id'";
+	$sql = "UPDATE tecnica SET solicitante='$solicitante', cedula='$cedula', edad='$edad', telefono='$telefono', coordinador='$coordinador', sector='$sector', tipoayuda='$tipoayuda', cantentregadas='$cantentregadas', fecha='$fecha', estado='$estado', fechaentrega='$fechaentrega', observaciones='$observaciones' WHERE id = '$id'";
 	$resultado = $mysqli->query($sql);
 
 ?>

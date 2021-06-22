@@ -90,12 +90,7 @@
 						<input type="number" class="form-control" id="cantentregadas" name="cantentregadas" placeholder="Cantidades Entregadas">
 					</div>
 				</div>
-				<div class="form-group">
-					<label for="stock" class="col-sm-2 control-label">Stock</label>
-					<div class="col-sm-10">
-						<input type="number" class="form-control" id="stock" name="stock" placeholder="Stock" required>
-					</div>
-				</div>
+				
 				<div class="form-group">
 					<label for="fecha" class="col-sm-2 control-label">Fecha de Ingreso</label>
 					<div class="col-sm-10">

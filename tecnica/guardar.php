@@ -10,13 +10,12 @@
 	$sector = $_POST['sector'];
 	$tipoayuda = $_POST['tipoayuda'];
 	$cantentregadas = $_POST['cantentregadas'];
-	$stock = $_POST['stock'];
 	$fecha = $_POST['fecha'];
 	$estado = $_POST['estado'];
   $fechaentrega = $_POST['fechaentrega'];
 	$observaciones = $_POST['observaciones'];
 
-	$sql = "INSERT INTO tecnica (solicitante, cedula, edad, telefono, coordinador, sector, tipoayuda, cantentregadas, stock, fecha, estado, fechaentrega, observaciones) VALUES ('$solicitante', '$cedula', '$edad', '$telefono', '$coordinador', '$sector', '$tipoayuda','$cantentregadas', '$stock', '$fecha','$estado','$fechaentrega','$observaciones')";
+	$sql = "INSERT INTO tecnica (solicitante, cedula, edad, telefono, coordinador, sector, tipoayuda, cantentregadas, fecha, estado, fechaentrega, observaciones) VALUES ('$solicitante', '$cedula', '$edad', '$telefono', '$coordinador', '$sector', '$tipoayuda','$cantentregadas', '$fecha','$estado','$fechaentrega','$observaciones')";
 	$resultado = $mysqli->query($sql);
 
 ?>

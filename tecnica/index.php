@@ -64,7 +64,6 @@
 							<th>Sector</th>
 							<th>Tipo de Ayuda</th>
 							<th>Cantidades Entregadas</th>
-							<th>Stock</th>
 							<th>Fecha de Ingreso</th>
 							<th>Estado</th>
 							<th>Fecha de Entrega</th>
@@ -85,7 +84,6 @@
 								<td><?php echo $row['sector']; ?></td>
 								<td><?php echo $row['tipoayuda']; ?></td>
 								<td><?php echo $row['cantentregadas']; ?></td>
-								<td><?php echo $row['stock']; ?></td>
 								<td><?php echo $row['fecha']; ?></td>
 								<td><?php echo $row['estado']; ?></td>
 								<td><?php echo $row['fechaentrega']; ?></td>
