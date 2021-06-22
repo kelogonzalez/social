@@ -3,7 +3,7 @@
 
 	$id = $_GET['id'];
 
-	$sql = "SELECT * FROM ayuda WHERE id = '$id'";
+	$sql = "SELECT * FROM tecnica WHERE id = '$id'";
 	$resultado = $mysqli->query($sql);
 	$row = $resultado->fetch_array(MYSQLI_ASSOC);
 

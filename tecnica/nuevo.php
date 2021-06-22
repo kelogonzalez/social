@@ -16,7 +16,7 @@
 			<form class="form-horizontal" method="POST" action="guardar.php" autocomplete="off">
 				<div class="form-group">
 					<label for="solicitante" class="col-sm-2 control-label">Solicitante</label>
-					<div class="col-sm-2">
+					<div class="col-sm-10">
 						<input type="text" class="form-control" id="solicitante" name="solicitante" placeholder="Solicitante" required>
 					</div>
 				</div>
@@ -64,7 +64,7 @@
 							<option value="COLCHON">COLCHON</option>
 							<option value="ANDADOR">ANDADOR</option>
 							<option value="ANDADOR DE RUEDAS">ANDADOR DE RUEDAS</option>
-							<option value="BASTON DE 4 PUNTAS">PENDIENTE</option>
+							<option value="BASTON DE 4 PUNTAS">BASTON DE 4 PUNTAS</option>
 							<option value="CAMINADORA">CAMINADORA</option>
 							<option value="CARRITO">CARRITO</option>
 							<option value="CARRITO PET">CARRITO PET</option>
