@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Sistema de Gestión Social</title>
+    <title>Sistema Gestión Social</title>
     <?php
         $LinksRoute="./";
         include './inc/links.php';
