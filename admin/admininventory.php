@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Logística</title>
+    <title>Registro Diálisis</title>
     <?php
         session_start();
         $LinksRoute="../";
@@ -22,7 +22,7 @@
         ?>
         <div class="container">
             <div class="page-header">
-              <h1 class="all-tittles">Sistema Turístico <small>Añadir Empresa</small></h1>
+              <h1 class="all-tittles">Sistema Gestión Social <small>Añadir Beneficiario</small></h1>
             </div>
         </div>
         <div class="container-fluid"  style="margin: 50px 0;">
@@ -31,27 +31,28 @@
                     <img src="../assets/img/flat-book.png" alt="pdf" class="img-responsive center-box" style="max-width: 110px;">
                 </div>
                 <div class="col-xs-12 col-sm-8 col-md-8 text-justify lead">
-                    Bienvenido a la sección para agregar nuevas empresas, deberas de llenar todos los campos para poder registrar.
+                    Bienvenido a la sección para agregar nuevos beneficiarios, deberas de llenar todos los campos para poder registrar.
                 </div>
             </div>
         </div>
         <div class="container-fluid">
             <form action="../process/AddBook.php" method="POST" id="saveData" autocomplete="off" enctype="multipart/form-data">
                 <div class="container-flat-form">
-                    <div class="title-flat-form title-flat-blue">Nueva empresa</div>
+                    <div class="title-flat-form title-flat-blue">Nuevo Beneficiario</div>
                     <div class="row">
                        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-                            <legend><strong>Ficha Catastral Turística del cantón Naranjal</strong></legend><br>
+                            <legend><strong>Ficha </strong></legend><br>
                             <div class="group-material">
-                                <input type="text" class="tooltips-general material-control" placeholder="Escribe aquí el numero de registro" name="bookCodeManual" pattern="[a-zA-Z0-9-]{1,100}" maxlength="100" data-toggle="tooltip" data-placement="top" title="Solamente números, letras y guiones">
+                                <input type="text" class="tooltips-general material-control" placeholder="Escribe aquí la cédula" name="bookCodeManual" pattern="[a-zA-Z0-9-]{1,100}" required="" maxlength="100" data-toggle="tooltip" data-placement="top" title="Solamente números">
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Número de Registro</label>
+                                <label>Cédula</label>
                             </div>
+
                             <div class="group-material">
-                                <span>Actividad</span>
-                                <select class="tooltips-general material-control" name="bookCategory" data-toggle="tooltip" data-placement="top" title="Elige la actividad de la empresa">
-                                    <option value="" disabled="" selected="">Selecciona una actividad</option>
+                                <span>Parroquia</span>
+                                <select class="tooltips-general material-control" name="bookCategory" data-toggle="tooltip" data-placement="top" title="Elige la Parroquia">
+                                    <option value="" disabled="" selected="">Selecciona una parroquia</option>
                                     <?php
                                         $checkCategory= ejecutarSQL::consultar("SELECT * FROM categoria");
                                         while($fila=mysqli_fetch_array($checkCategory, MYSQLI_ASSOC)){
@@ -65,8 +66,9 @@
                                 <input type="text" class="tooltips-general material-control" placeholder="Escribe aquí el nombre de la empresa" name="bookName" required="" maxlength="70" data-toggle="tooltip" data-placement="top" title="Escribe el nombre de la empresa">
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Nombre de la Empresa</label>
+                                <label>Nombre del beneficiario</label>
                             </div>
+                            <!--
                             <div class="group-material">
                                 <input type="text" class="tooltips-general material-control" placeholder="Escribe aquí la calle principal " name="bookAutor" required="" maxlength="500" data-toggle="tooltip" data-placement="top" title="Escribe la calle principal de la ubicación de la empresa">
                                 <span class="highlight"></span>
@@ -78,12 +80,17 @@
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>Parroquia</label>
-                            </div>
+                            </div>-->
+
+                            <!--
                             <legend><strong>Otros datos</strong></legend><br>
                             <div class="group-material">
                                 <span>Tipo de Turismo</span>
                                 <select class="tooltips-general material-control" name="bookProvider" data-toggle="tooltip" data-placement="top" title="Elige el tipo de turismo">
                                     <option value="" disabled="" selected="">Clasificación MITUR</option>
+
+
+
                                     <?php
                                         $checkProvider= ejecutarSQL::consultar("select * from proveedor");
                                         while($fila=mysqli_fetch_array($checkProvider, MYSQLI_ASSOC)){
@@ -92,7 +99,8 @@
                                         mysqli_free_result($checkProvider);
                                     ?>
                                 </select>
-                            </div>
+                            </div>-->
+                            <!--
                            <div class="group-material">
                                <input type="text" class="material-control tooltips-general" placeholder="Escribe aquí el correo electrónico de la Empresa" name="bookYear"  maxlength="50" data-toggle="tooltip" data-placement="top" title="Escribe la email de la Empresa">
                                 <span class="highlight"></span>
@@ -125,9 +133,9 @@
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>Copias</label>
-                            </div>
+                            </div>-->
                             <!--<legend><strong>Ubicación, valor y resumen</strong></legend><br>-->
-
+<!--
                             <div class="group-material">
                                <input type="text" class="material-control tooltips-general" placeholder="Escribe aquí el horario de atención" name="bookLocation" required="" maxlength="50" data-toggle="tooltip" data-placement="top" title="Horarios de atención">
                                 <span class="highlight"></span>
@@ -142,7 +150,7 @@
                                 <label>Página Web</label>
                             </div>
 
-<!--
+
                     <div class="group-material">
 
                                 <span>Cargo</span>
@@ -169,84 +177,47 @@
 
 <!--NUEVOS CAMPOS -->
 
-<div class="group-material">
-    <input type="text" class="material-control tooltips-general" placeholder="Escribe aquí los idiomas que maneja la empresa" name="bookIdioma" maxlength="200" data-toggle="tooltip" data-placement="top" title="Idioma">
-    <span class="highlight"></span>
-    <span class="bar"></span>
-    <label>Idioma</label>
-</div>
 
-  <legend><strong>Personal que labora</strong></legend><br>
+
 
   <div class="group-material">
-      <input type="text" class="material-control tooltips-general" placeholder="Escribe aquí cuantos hombres trabajan en la empresa" name="bookHombres" pattern="[0-9]{1,10}" maxlength="10" data-toggle="tooltip" data-placement="top" title="Sólo números">
+      <input type="text" class="material-control tooltips-general" placeholder="Escribe aqui el sector" name="bookReservas" maxlength="200" data-toggle="tooltip" data-placement="top" title="Sector">
       <span class="highlight"></span>
       <span class="bar"></span>
-      <label>Hombres</label>
+      <label>Sector</label>
   </div>
 
   <div class="group-material">
-      <input type="text" class="material-control tooltips-general" placeholder="Escribe aquí cuantas mujeres trabajan en la empresa" name="bookMujeres" pattern="[0-9]{1,10}" maxlength="10" data-toggle="tooltip" data-placement="top" title="Sólo números">
+      <input type="text" class="material-control tooltips-general" placeholder="Escribe aquí una referencia del lugar" name="bookSimples" maxlength="200" data-toggle="tooltip" data-placement="top" title="Referencia">
       <span class="highlight"></span>
       <span class="bar"></span>
-      <label>Mujeres</label>
-  </div>
-
-  <div class="group-material">
-      <input type="text" class="material-control tooltips-general" placeholder="Escribe aquí cuantas personas con discapacidad trabajan en la empresa" name="bookDiscapacidad" pattern="[0-9]{1,10}" maxlength="10" data-toggle="tooltip" data-placement="top" title="Sólo números">
-      <span class="highlight"></span>
-      <span class="bar"></span>
-      <label>Con Discapacidad</label>
-  </div>
-
-  <div class="group-material">
-      <input type="text" class="material-control tooltips-general" placeholder="Escribe aquí cuantas personas con E. Genero trabajan en la empresa" name="bookGenero" pattern="[0-9]{1,10}" maxlength="10" data-toggle="tooltip" data-placement="top" title="Sólo números">
-      <span class="highlight"></span>
-      <span class="bar"></span>
-      <label>E. Genero</label>
-  </div>
-
-
-  <legend><strong>Especificaciones (Aplicar según corresponda)</strong></legend><br>
-
-  <div class="group-material">
-      <input type="text" class="material-control tooltips-general" placeholder="Escribe Si o No" name="bookReservas" maxlength="2" data-toggle="tooltip" data-placement="top" title="Reservas">
-      <span class="highlight"></span>
-      <span class="bar"></span>
-      <label>Reservas</label>
-  </div>
-
-  <div class="group-material">
-      <input type="text" class="material-control tooltips-general" placeholder="Escribe aquí cuantas habitaciones simples tiene" name="bookSimples" pattern="[0-9]{1,10}" maxlength="10" data-toggle="tooltip" data-placement="top" title="Sólo números">
-      <span class="highlight"></span>
-      <span class="bar"></span>
-      <label>Habitaciones Simples</label>
+      <label>Referencia</label>
   </div>
   <div class="group-material">
-      <input type="text" class="material-control tooltips-general" placeholder="Escribe aquí cuantas habitaciones dobles tiene" name="bookDobles" pattern="[0-9]{1,10}" maxlength="10" data-toggle="tooltip" data-placement="top" title="Sólo números">
+      <input type="text" class="material-control tooltips-general" placeholder="Escribe aquí el centro de atención" name="bookDobles" maxlength="200" data-toggle="tooltip" data-placement="top" title="Centro de Atención">
       <span class="highlight"></span>
       <span class="bar"></span>
-      <label>Habitaciones Dobles</label>
+      <label>Centro de Atención</label>
   </div>
   <div class="group-material">
-      <input type="text" class="material-control tooltips-general" placeholder="Escribe aquí cuantas habitaciones triples tiene" name="bookTriples" pattern="[0-9]{1,10}" maxlength="10" data-toggle="tooltip" data-placement="top" title="Sólo números">
+      <input type="text" class="material-control tooltips-general" placeholder="Escribe aquí los días de atención" name="bookTriples" pattern="[0-9]{1,10}" maxlength="10" data-toggle="tooltip" data-placement="top" title="Sólo números">
       <span class="highlight"></span>
       <span class="bar"></span>
-      <label>Habitaciones Triples</label>
+      <label>Días de Hemodiálisis</label>
   </div>
   <div class="group-material">
-      <input type="text" class="material-control tooltips-general" placeholder="Escribe aquí cuantas habitaciones matrimoniales tiene" name="bookMatrimonio" pattern="[0-9]{1,10}" maxlength="10" data-toggle="tooltip" data-placement="top" title="Sólo números">
+      <input type="text" class="material-control tooltips-general" placeholder="Escribe aquí el Horario de Entrada" name="bookMatrimonio"  maxlength="100" data-toggle="tooltip" data-placement="top" title="Sólo números">
       <span class="highlight"></span>
       <span class="bar"></span>
-      <label>Habitaciones Matrimoniales</label>
+      <label>Horario de entrada</label>
   </div>
   <div class="group-material">
-      <input type="text" class="material-control tooltips-general" placeholder="Escribe aquí cuantas habitaciones familiares tiene" name="bookFamilia" pattern="[0-9]{1,10}" maxlength="10" data-toggle="tooltip" data-placement="top" title="Sólo números">
+      <input type="text" class="material-control tooltips-general" placeholder="Escribe aquí el Horario de Salida" name="bookFamilia" maxlength="100" data-toggle="tooltip" data-placement="top" title="Sólo números">
       <span class="highlight"></span>
       <span class="bar"></span>
-      <label>Habitaciones Familiares</label>
+      <label>Horario de salida</label>
   </div>
-
+<!--
   <div class="group-material">
       <input type="text" class="material-control tooltips-general" placeholder="Escribe aquí el total de camas que tiene" name="bookCamas" pattern="[0-9]{1,10}" maxlength="10" data-toggle="tooltip" data-placement="top" title="Sólo números">
       <span class="highlight"></span>
@@ -496,7 +467,7 @@
     <span class="highlight"></span>
     <span class="bar"></span>
     <label>Sector Turístico</label>
-</div>
+</div>-->
 
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 
@@ -505,12 +476,12 @@
 
 
 
-
+<!--
                             <div class="group-material">
                                 <span>Observaciones / Necesidades</span>
                                 <textarea class="material-control" name="bookDescription" rows="7" placeholder="Escribe aquí las observaciones o necesidades de la empresa"></textarea>
-                            </div>
-                            <legend><strong>Foto del local y archivo PDF</strong></legend><br>
+                            </div>-->
+                            <legend><strong>Foto del Paciente y archivo PDF</strong></legend><br>
                             <div class="group-material">
                                 <span class="lead"><i class="zmdi zmdi-image"></i> Foto</span>
                                 <input type="file" name="bookPicture">
@@ -522,7 +493,7 @@
                                 <small>Archivos permitidos: PDF<br>Tamaño máximo: 100MB</small>
                             </div>
                             <div class="form-group">
-                                <span class="lead">¿El archivo PDF será visible para los usuarios?</span><br>
+                                <span class="lead">¿El archivo PDF será visible?</span><br>
                                 <label for="download1">
                                     <input type="radio" name="bookDownload" id="download1" value="yes"> Si
                                 </label>

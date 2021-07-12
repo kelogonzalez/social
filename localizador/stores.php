@@ -5,8 +5,8 @@
 
 	  # conectare la base de datos
 	  $db_host= "localhost";
-	  $db_user= "kelogonzalez";
-	  $db_pass= "123";
+	  $db_user= "root";
+	  $db_pass= "";
 	  $db_name= "store_locator";
     $con=@mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 	$sql="select * from stores";
