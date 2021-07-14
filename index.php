@@ -12,7 +12,7 @@
 <body class="full-cover-background" style="background-image:url(assets/img/font-login.jpg);">
     <div class="form-container">
       <figure>
-          <img src="<?php echo $LinksRoute; ?>assets/img/social.png" alt="Biblioteca" class="img-responsive center-box" style="width:100%;">
+          <img src="<?php echo $LinksRoute; ?>assets/img/social.png" alt="Social" class="img-responsive center-box" style="width:100%;">
       </figure>
         <p class="text-center" style="margin-top: 17px;">
            <i class="zmdi zmdi-account-circle zmdi-hc-5x"></i>
