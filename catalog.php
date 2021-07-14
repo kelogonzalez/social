@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Catálogo Turístico</title>
+    <title>Catálogo de Beneficiarios</title>
     <?php
         session_start();
         $LinksRoute="./";
@@ -33,7 +33,7 @@
         ?>
         <div class="container">
             <div class="page-header">
-              <h1 class="all-tittles">Sistema Turístico <small>Catálogo de Empresas</small></h1>
+              <h1 class="all-tittles">Sistema Gestión Social <small>Catálogo de Beneficiarios</small></h1>
             </div>
         </div>
          <div class="container-fluid"  style="margin: 40px 0;">
@@ -42,14 +42,14 @@
                     <img src="assets/img/checklist.png" alt="pdf" class="img-responsive center-box" style="max-width: 110px;">
                 </div>
                 <div class="col-xs-12 col-sm-8 col-md-8 text-justify lead">
-                    Bienvenido al catálogo, selecciona una categoría de la lista para empezar, si deseas buscar una empresa por nombre comercial o nombre de propietario has click en el icono &nbsp; <i class="zmdi zmdi-search"></i> &nbsp; que se encuentra en la barra superior
+                    Bienvenido al catálogo, selecciona una parroquia de la lista para empezar, si deseas buscar un beneficiario por nombre has click en el icono &nbsp; <i class="zmdi zmdi-search"></i> &nbsp; que se encuentra en la barra superior
                 </div>
             </div>
         </div>
         <?php
             $checkingAllBooks=ejecutarSQL::consultar("SELECT * FROM libro");
             if(mysqli_num_rows($checkingAllBooks)>0){
-                echo '<div class="container-fluid" style="margin: 0 0 50px 0;"><h2 class="text-center" style="margin: 0 0 25px 0;">Actividades</h2><ul class="list-unstyled text-center list-catalog-container">';
+                echo '<div class="container-fluid" style="margin: 0 0 50px 0;"><h2 class="text-center" style="margin: 0 0 25px 0;">Parroquias</h2><ul class="list-unstyled text-center list-catalog-container">';
                 $checkCategory=ejecutarSQL::consultar("SELECT * FROM categoria order by Nombre ASC");
                 if(mysqli_num_rows($checkCategory)>0){
                     while($fila=mysqli_fetch_array($checkCategory, MYSQLI_ASSOC)){
