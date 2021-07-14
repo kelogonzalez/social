@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Sistema Gestión Social</title>
+    <title>Sistema - Gestión Social</title>
     <?php
         session_start();
         $LinksRoute="./";
