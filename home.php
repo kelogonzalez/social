@@ -47,7 +47,7 @@
         <section class="full-reset text-center" style="padding: 40px 0;">
             <article class="tile" data-href="./admin/adminlistuser.php" data-num="<?php echo mysqli_num_rows($checkAdmins); ?>">
                 <div class="tile-icon full-reset"><i class="zmdi zmdi-face"></i></div>
-                <div class="tile-name all-tittles">administradores</div>
+                <div class="tile-name all-tittles">Personal</div>
                 <div class="tile-num full-reset"><?php echo mysqli_num_rows($checkAdmins); ?></div>
             </article>
 
@@ -57,13 +57,13 @@
                 <div class="tile-name all-tittles">usuarios</div>
                 <div class="tile-num full-reset"><?php echo mysqli_num_rows($checkStudents); ?></div>
             </article>
--->
+
 
             <article class="tile" data-href="./admin/adminlistteacher.php" data-num="<?php echo mysqli_num_rows($checkTeachers); ?>">
                 <div class="tile-icon full-reset"><i class="zmdi zmdi-male-alt"></i></div>
                 <div class="tile-name all-tittles"style="width: 90%;">personal gestión social</div>
                 <div class="tile-num full-reset"><?php echo mysqli_num_rows($checkTeachers); ?></div>
-            </article>
+            </article>-->
             <!--
             <article class="tile" data-href="./admin/adminlistpersonal.php" data-num="<?php echo mysqli_num_rows($checkPersonalA); ?>">
                 <div class="tile-icon full-reset"><i class="zmdi zmdi-male-female"></i></div>
