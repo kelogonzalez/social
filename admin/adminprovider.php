@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Tipo de Turismo</title>
+    <title>Gestionadores</title>
     <?php
         session_start();
         $LinksRoute="../";
@@ -22,15 +22,15 @@
         ?>
         <div class="container">
             <div class="page-header">
-              <h1 class="all-tittles">Sistema de Turismo <small>Administración Institución</small></h1>
+              <h1 class="all-tittles">Sistema Gestión Social <small>Administración Institución</small></h1>
             </div>
         </div>
         <div class="container-fluid">
             <ul class="nav nav-tabs nav-justified"  style="font-size: 17px;">
               <li role="presentation"><a href="admininstitution.php">Institución</a></li>
-              <li role="presentation"  class="active"><a href="adminprovider.php">Tipo de Turismo</a></li>
-              <li role="presentation"><a href="admincategory.php">Actividades</a></li>
-              <!--<li role="presentation"><a href="adminsection.php">Tipo de Turismo</a></li>-->
+              <li role="presentation"  class="active"><a href="adminprovider.php">Gestor</a></li>
+              <!--<li role="presentation"><a href="admincategory.php">Actividades</a></li>
+              <li role="presentation"><a href="adminsection.php">Tipo de Turismo</a></li>-->
             </ul>
         </div>
         <div class="container-fluid"  style="margin: 50px 0;">
@@ -39,7 +39,7 @@
                     <img src="../assets/img/user04.png" alt="user" class="img-responsive center-box" style="max-width: 110px;">
                 </div>
                 <div class="col-xs-12 col-sm-8 col-md-8 text-justify lead">
-                    Bienvenido a la sección para registrar un nuevo tipo de turismo, debes de llenar todos los campos del siguiente formulario para poder registrar un tipo de turismo.
+                    Bienvenido a la sección para registrar un nuevo Gestionador, debes de llenar todos los campos del siguiente formulario para poder registrar un Gestionador.
                 </div>
             </div>
         </div>
@@ -47,23 +47,23 @@
             <div class="row">
                 <div class="col-xs-12 lead">
                     <ol class="breadcrumb">
-                      <li class="active">Nuevo Tipo de Turismo</li>
-                      <li><a href="adminlistprovider.php">Listado de Tipos de Turismo</a></li>
+                      <li class="active">Nuevo Gestor</li>
+                      <li><a href="adminlistprovider.php">Listado de Gestores</a></li>
                     </ol>
                 </div>
             </div>
         </div>
         <div class="container-fluid">
             <div class="container-flat-form">
-                <div class="title-flat-form title-flat-blue">Agregar un nuevo Tipo</div>
+                <div class="title-flat-form title-flat-blue">Agregar un nuevo Gestor</div>
                 <form action="../process/AddProvider.php" method="post" class="form_SRCB" data-type-form="save" autocomplete="off">
                     <div class="row">
                        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                             <div class="group-material">
-                                <input type="text" class="material-control tooltips-general" placeholder="Nombre de la clasificación" name="providerName" required="" maxlength="50" data-toggle="tooltip" data-placement="top" title="Escribe el nombre de la clasificación">
+                                <input type="text" class="material-control tooltips-general" placeholder="Escriba un nombre o Departamento" name="providerName" required="" maxlength="50" data-toggle="tooltip" data-placement="top" title="Escribe el nombre del gestor">
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Clasificación MINTUR</label>
+                                <label>Nombre del Gestor</label>
                             </div>
 
 <!--

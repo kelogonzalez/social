@@ -114,8 +114,8 @@ if(mysqli_num_rows($checkLoanBook)<=0 && mysqli_num_rows($checkLoanBook1)<=0){
                 if(consultasSQL::UpdateSQL("libro", $bookDataSave, "CodigoLibro='$bookCode'")){
                     echo '<script type="text/javascript">
                         swal({
-                            title:"¡Datos de la empresa actualizados!",
-                            text:"Los datos de la empresa se actualizaron correctamente",
+                            title:"¡Datos del beneficiario actualizados!",
+                            text:"Los datos del beneficiario se actualizaron correctamente",
                             type: "success",
                             confirmButtonText: "Aceptar"
                         },
@@ -131,7 +131,7 @@ if(mysqli_num_rows($checkLoanBook)<=0 && mysqli_num_rows($checkLoanBook1)<=0){
                     echo '<script type="text/javascript">
                         swal({
                             title:"¡Ocurrió un error inesperado!",
-                            text:"No hemos podido actualizar los datos del libro, por favor intenta nuevamente",
+                            text:"No hemos podido actualizar los datos del beneficiario, por favor intenta nuevamente",
                             type: "error",
                             confirmButtonText: "Aceptar"
                         });

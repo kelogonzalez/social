@@ -19,8 +19,8 @@ if(mysqli_num_rows($checkLoanBook)<=0){
         }
         echo '<script type="text/javascript">
             swal({
-                title:"¡Empresa eliminada!",
-                text:"Los datos de la empresa se eliminaron exitosamente",
+                title:"¡Beneficiario eliminado!",
+                text:"Los datos del beneficiario se eliminaron exitosamente",
                 type: "success",
                 confirmButtonText: "Aceptar"
             },
@@ -36,7 +36,7 @@ if(mysqli_num_rows($checkLoanBook)<=0){
         echo '<script type="text/javascript">
             swal({
                 title:"¡Ocurrió un error inesperado!",
-                text:"No se pudo eliminar el libro del sistema, por favor intenta de nuevo",
+                text:"No se pudo eliminar el beneficiario del sistema, por favor intenta de nuevo",
                 type: "error",
                 confirmButtonText: "Aceptar"
             });

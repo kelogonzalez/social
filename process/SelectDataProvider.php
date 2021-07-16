@@ -7,17 +7,17 @@ $selectProvider=ejecutarSQL::consultar("SELECT * FROM proveedor WHERE CodigoProv
 $dataProvider=mysqli_fetch_array($selectProvider, MYSQLI_ASSOC);
 if(mysqli_num_rows($selectProvider)>=1){
     echo '
-    <legend><strong>Información del Tipo de Turismo</strong></legend><br>
+    <legend><strong>Información de Gestores</strong></legend><br>
     <input type="hidden" value="'.$dataProvider['CodigoProveedor'].'" name="providerCode">
     <div class="group-material">
-        <input type="text" class="material-control tooltips-general" value="'.$dataProvider['Nombre'].'" name="providerName" required="" maxlength="50" data-toggle="tooltip" data-placement="top" title="Escribe el nombre del proveedor">
+        <input type="text" class="material-control tooltips-general" value="'.$dataProvider['Nombre'].'" name="providerName" required="" maxlength="50" data-toggle="tooltip" data-placement="top" title="Escribe el nombre del gestor">
         <span class="highlight"></span>
         <span class="bar"></span>
-        <label>Clasificación MINTUR</label>
+        <label>Nombre del Gestor</label>
     </div>
 
     <div class="group-material">
-        <input type="text" class="material-control tooltips-general" value="'.$dataProvider['Direccion'].'" name="providerAddres" required="" maxlength="70" data-toggle="tooltip" data-placement="top" title="Escribe la dirección del proveedor">
+        <input type="text" class="material-control tooltips-general" value="'.$dataProvider['Direccion'].'" name="providerAddres" required="" maxlength="70" data-toggle="tooltip" data-placement="top" title="Escribe la categoria">
         <span class="highlight"></span>
         <span class="bar"></span>
         <label>Categoria</label>

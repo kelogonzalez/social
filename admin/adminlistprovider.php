@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Tipo de Turismo</title>
+    <title>Lista de Gestores</title>
     <?php
         session_start();
         $LinksRoute="../";
@@ -22,15 +22,15 @@
         ?>
         <div class="container">
             <div class="page-header">
-              <h1 class="all-tittles">Sistema Turístico <small>Administración Institución</small></h1>
+              <h1 class="all-tittles">Sistema Gestión Social <small>Administración Institución</small></h1>
             </div>
         </div>
         <div class="container-fluid">
             <ul class="nav nav-tabs nav-justified"  style="font-size: 17px;">
               <li role="presentation"><a href="admininstitution.php">Institución</a></li>
-              <li role="presentation"  class="active"><a href="adminprovider.php">Tipo de Turismo</a></li>
-              <li role="presentation"><a href="admincategory.php">Actividad</a></li>
-              <!--<li role="presentation"><a href="adminsection.php">Tipo de Turismo</a></li>-->
+              <li role="presentation"  class="active"><a href="adminprovider.php">Gestor</a></li>
+              <!--<li role="presentation"><a href="admincategory.php">Actividad</a></li>
+              <li role="presentation"><a href="adminsection.php">Tipo de Turismo</a></li>-->
             </ul>
         </div>
         <div class="container-fluid"  style="margin: 50px 0;">
@@ -47,18 +47,18 @@
             <div class="row">
                 <div class="col-xs-12 lead">
                     <ol class="breadcrumb">
-                      <li><a href="adminprovider.php">Nuevo Tipo de Turismo</a></li>
-                      <li class="active">Listado de Tipos de Turismo</li>
+                      <li><a href="adminprovider.php">Nuevo Gestor</a></li>
+                      <li class="active">Listado de Gestores</li>
                     </ol>
                 </div>
             </div>
         </div>
         <div class="container-fluid">
-            <h2 class="text-center all-tittles">listado de Tipo de Turismo</h2>
+            <h2 class="text-center all-tittles">listado de Gestores</h2>
             <div class="div-table">
                 <div class="div-table-row div-table-head">
                     <div class="div-table-cell">#</div>
-                    <div class="div-table-cell">Clasificación MINTUR</div>
+                    <div class="div-table-cell">Nombre del Gestor</div>
                     <!--<div class="div-table-cell">Email</div>-->
                     <div class="div-table-cell">Categoria</div>
                     <!--<div class="div-table-cell">Teléfono</div>
@@ -102,7 +102,7 @@
             <form class="form_SRCB modal-content" action="../process/UpdateProvider.php" method="post" data-type-form="update" autocomplete="off">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title text-center all-tittles">Actualizar datos de Tipo Turismo</h4>
+                <h4 class="modal-title text-center all-tittles">Actualizar datos de Gestores</h4>
               </div>
               <div class="modal-body" id="ModalData"></div>
               <div class="modal-footer">

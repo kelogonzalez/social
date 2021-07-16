@@ -22,14 +22,14 @@
         ?>
         <div class="container">
             <div class="page-header">
-              <h1 class="all-tittles">Sistema Turístico <small>Administración Institución</small></h1>
+              <h1 class="all-tittles">Sistema Gestión Social <small>Administración Institución</small></h1>
             </div>
         </div>
         <div class="container-fluid">
             <ul class="nav nav-tabs nav-justified"  style="font-size: 17px;">
               <li role="presentation" class="active"><a href="admininstitution.php">Institución</a></li>
-              <li role="presentation"><a href="adminprovider.php">Tipo de Turismo</a></li>
-              <li role="presentation"><a href="admincategory.php">Actividades</a></li>
+              <li role="presentation"><a href="adminprovider.php">Gestor</a></li>
+              <!--<li role="presentation"><a href="admincategory.php">Actividades</a></li>-->
               <!--<li role="presentation"><a href="adminsection.php">Tipo de Turismo</a></li>-->
             </ul>
         </div>
@@ -40,8 +40,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-8 col-md-8 text-justify lead">
                     Guarda los datos de tu institución, una vez almacenados los datos no podrás hacer más registros.
-                    Puedes actualizar la información actual, o eliminar el registro completamente y añadir uno nuevo, siempre
-                    y cuando no hayas registrado empresas.
+                    Puedes actualizar la información actual, o eliminar el registro completamente..
                 </div>
             </div>
         </div>

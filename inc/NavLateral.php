@@ -44,17 +44,17 @@
 
                         <li>
                             <a href="<?php echo $LinkRouteAdmin; ?>adminprovider.php">
-                                <i class="zmdi zmdi-assignment-account zmdi-hc-fw"></i>&nbsp;&nbsp; Nuevo Tipo de Turismo
+                                <i class="zmdi zmdi-assignment-account zmdi-hc-fw"></i>&nbsp;&nbsp; Nuevo Gestor
                             </a>
                         </li>
 
-
+<!--
                         <li>
                             <a href="<?php echo $LinkRouteAdmin; ?>admincategory.php">
                                 <i class="zmdi zmdi-bookmark-outline zmdi-hc-fw"></i>&nbsp;&nbsp; Nueva actividad
                             </a>
                         </li>
-                        <!--<li>
+                        <li>
                             <a href="<?php echo $LinkRouteAdmin; ?>adminsection.php">
                                 <i class="zmdi zmdi-assignment-account zmdi-hc-fw"></i>&nbsp;&nbsp; Nuevo tipo de turismo
                             </a>
@@ -97,17 +97,17 @@
                 </li>
                 <li>
                     <div class="dropdown-menu-button">
-                        <i class="zmdi zmdi-assignment-o zmdi-hc-fw"></i>&nbsp;&nbsp; Registros  <i class="zmdi zmdi-chevron-down pull-right zmdi-hc-fw"></i>
+                        <i class="zmdi zmdi-assignment-o zmdi-hc-fw"></i>&nbsp;&nbsp; Registros de Beneficiarios  <i class="zmdi zmdi-chevron-down pull-right zmdi-hc-fw"></i>
                     </div>
                     <ul class="list-unstyled">
                         <li>
                             <a class="btn-addBook" href="#" data-process="<?php echo $LinksRoute; ?>process/checkDataAdmin.php" data-href="<?php echo $LinkRouteAdmin; ?>admininventory.php">
-                                <i class="zmdi zmdi-book zmdi-hc-fw"></i>&nbsp;&nbsp; Diálisis
+                                <i class="zmdi zmdi-book zmdi-hc-fw"></i>&nbsp;&nbsp; Beneficiarios de Diálisis
                             </a>
                         </li>
                         <li>
                             <a href="<?php echo $LinksRoute; ?>catalog.php">
-                                <i class="zmdi zmdi-bookmark-outline zmdi-hc-fw"></i>&nbsp;&nbsp; Catálogo
+                                <i class="zmdi zmdi-bookmark-outline zmdi-hc-fw"></i>&nbsp;&nbsp; Catálogo de Beneficiarios
                             </a>
                         </li>
                     </ul>
@@ -211,7 +211,7 @@
                     </a>
                 </li>
                 <figure>
-                    <img src="<?php echo $LinksRoute; ?>assets/img/logo.png" alt="Biblioteca" class="img-responsive center-box" style="width:76%;">
+                    <img src="<?php echo $LinksRoute; ?>assets/img/R.png" alt="Biblioteca" class="img-responsive center-box" style="width:76%;">
                 </figure>
 
 

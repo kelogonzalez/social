@@ -77,16 +77,17 @@
             </article>-->
             <article class="tile" data-href="./catalog.php" data-num="<?php echo mysqli_num_rows($checkCategories); ?>">
                 <div class="tile-icon full-reset"><i class="zmdi zmdi-book"></i></div>
-                <div class="tile-name all-tittles">empresa</div>
+                <div class="tile-name all-tittles">Beneficiarios de Diálisis</div>
                 <div class="tile-num full-reset"><?php echo $totalBooks; ?></div>
             </article>
+            <!--
             <article class="tile" data-href="./admin/adminlistcategory.php" data-num="<?php echo mysqli_num_rows($checkCategories); ?>">
                 <div class="tile-icon full-reset"><i class="zmdi zmdi-bookmark-outline"></i></div>
                 <div class="tile-name all-tittles">actividad</div>
                 <div class="tile-num full-reset"><?php echo mysqli_num_rows($checkCategories); ?></div>
             </article>
 
-            <!--
+            
             <article class="tile" data-href="./admin/adminlistsection.php" data-num="<?php echo mysqli_num_rows($checkSections); ?>">
                 <div class="tile-icon full-reset"><i class="zmdi zmdi-assignment-account"></i></div>
                 <div class="tile-name all-tittles">tipo de turismo</div>

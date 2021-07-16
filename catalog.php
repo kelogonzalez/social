@@ -82,7 +82,7 @@
                         $selectCategC=ejecutarSQL::consultar("SELECT * FROM categoria WHERE CodigoCategoria='".$VarCategoryCatalog."'");
                         $dataCategC=mysqli_fetch_array($selectCategC, MYSQLI_ASSOC);
                 ?>
-                <p class="text-center lead all-tittles text-lowercase" style="padding: 0 25px;">se muestra un total de <?php echo $totalregistros["FOUND_ROWS()"]; ?> empresas en la actividad <?php echo $dataCategC['Nombre']; ?></p><br>
+                <p class="text-center lead all-tittles text-lowercase" style="padding: 0 25px;">se muestra un total de <?php echo $totalregistros["FOUND_ROWS()"]; ?> beneficiarios en la parroquia <?php echo $dataCategC['Nombre']; ?></p><br>
                 <div class="container-fluid">
                 <?php
 					mysqli_free_result($selectCategC);
@@ -103,16 +103,16 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-xs-12 col-sm-6">
-                                <strong><i class="zmdi zmdi-account-box"></i> Dirección </strong><br>
+                                <strong><i class="zmdi zmdi-account-box"></i> Teléfono </strong><br>
                                 <?php echo $bookCodeInfo['Autor']; ?><br>
-                                <strong><i class="zmdi zmdi-edit"></i> Teléfono </strong><br>
-                                <?php echo $bookCodeInfo['Estimado']; ?>
+                                <strong><i class="zmdi zmdi-edit"></i> Cédula </strong><br>
+                                <?php echo $bookCodeInfo['CodigoLibroManual']; ?>
                             </div>
                             <div class="col-xs-12 col-sm-6">
-                                <strong><i class="zmdi zmdi-globe"></i> Parroquia </strong><br>
+                                <strong><i class="zmdi zmdi-globe"></i> Sector </strong><br>
                                 <?php echo $bookCodeInfo['Pais']; ?><br>
-                                <strong><i class="zmdi zmdi-calendar-note"></i> Horario </strong><br>
-                                <?php echo $bookCodeInfo['Ubicacion']; ?>
+                                <strong><i class="zmdi zmdi-calendar-note"></i> Centro de Atención </strong><br>
+                                <?php echo $bookCodeInfo['Cargo']; ?>
                             </div>
                         </div>
                     </div>
