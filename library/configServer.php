@@ -10,7 +10,7 @@ define("USER", "root");
 define("SERVER", "localhost");
 
 //Nombre de la base de datos (No modificar)
-define("BD", "social");
+define("BD", "ambiente");
 
 //Contraseña de myqsl
 define("PASS", "");
